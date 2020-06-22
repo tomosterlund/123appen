@@ -4,12 +4,12 @@ import Header from './Header.vue'
 import Body from './AppBody.vue'
 import VueRouter from 'vue-router'
 import { routes } from './routes'
-
+console.log("blub");
 export const eventBus = new Vue();
 
 Vue.use(VueRouter)
 
-const router = new VueRouter({
+const router = new VueRouter({ 
   routes,
   mode: 'history'
 })
